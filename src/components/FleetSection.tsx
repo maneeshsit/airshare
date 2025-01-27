@@ -4,24 +4,108 @@ import { Button } from "@/components/ui/button";
 const FleetSection = () => {
   const aircraft = [
     {
-      name: "Citation XLS+",
-      description: "Mid-size jet perfect for regional travel",
+      name: "Cessna Citation CJ2",
       capacity: "8 passengers",
-      range: "2,100 nautical miles",
       image: "/placeholder.svg",
     },
     {
-      name: "Phenom 300E",
-      description: "Light jet with exceptional performance",
+      name: "Hawker Beechcraft 750",
       capacity: "6 passengers",
-      range: "2,010 nautical miles",
       image: "/placeholder.svg",
     },
     {
-      name: "King Air 350i",
-      description: "Turboprop with outstanding versatility",
+      name: "Hawker Beechcraft 800XP",
       capacity: "8 passengers",
-      range: "1,806 nautical miles",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Hawker Beechcraft 900XP",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Falcon 2000 Easy",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Global 6000",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Legacy 600",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Gulfstream G200",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Augusta AW 109",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Dassault Falcon 2000LX",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "DA50 RG",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "DA62 (twin engine)",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "eDA40 (electric)",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "DA62 MPP (twin engine)",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "DHC-2 Beaver",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "M700 Fury​",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "M500",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "M350",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Archer® LX​",
+      capacity: "8 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Archer® DLX",
+      capacity: "6 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "FanJet 600",
+      capacity: "8 passengers",
       image: "/placeholder.svg",
     },
   ];
