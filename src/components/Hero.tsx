@@ -23,7 +23,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Experience seamless private aviation with our premium aircraft sharing service.
+          Experience seamless private aviation with our aircraft sharing service.
           Book your flight today and elevate your travel experience.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
