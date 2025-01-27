@@ -5,12 +5,12 @@ const FleetSection = () => {
   const aircraft = [
     {
       name: "Cessna Citation CJ2",
-      capacity: "8 passengers",
+      capacity: "6 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Hawker Beechcraft 750",
-      capacity: "6 passengers",
+      capacity: "8 passengers",
       image: "/placeholder.svg",
     },
     {
@@ -25,62 +25,62 @@ const FleetSection = () => {
     },
     {
       name: "Falcon 2000 Easy",
-      capacity: "6 passengers",
+      capacity: "10 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Global 6000",
-      capacity: "8 passengers",
+      capacity: "13-19 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Legacy 600",
-      capacity: "8 passengers",
+      capacity: "13 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Gulfstream G200",
-      capacity: "6 passengers",
+      capacity: "8-10 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Augusta AW 109",
-      capacity: "8 passengers",
+      capacity: "6 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "Dassault Falcon 2000LX",
-      capacity: "8 passengers",
+      capacity: "10 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "DA50 RG",
-      capacity: "6 passengers",
+      capacity: "5 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "DA62 (twin engine)",
-      capacity: "8 passengers",
+      capacity: "7 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "eDA40 (electric)",
-      capacity: "8 passengers",
+      capacity: "4 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "DA62 MPP (twin engine)",
-      capacity: "6 passengers",
+      capacity: "2 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "DHC-2 Beaver",
-      capacity: "8 passengers",
+      capacity: "6 passengers",
       image: "/placeholder.svg",
     },
     {
       name: "M700 Fury​",
-      capacity: "8 passengers",
+      capacity: "6 passengers",
       image: "/placeholder.svg",
     },
     {
@@ -90,22 +90,22 @@ const FleetSection = () => {
     },
     {
       name: "M350",
-      capacity: "8 passengers",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Archer® LX​",
-      capacity: "8 passengers",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Archer® DLX",
       capacity: "6 passengers",
       image: "/placeholder.svg",
     },
     {
+      name: "Archer® LX​",
+      capacity: "4 passengers",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Archer® DLX",
+      capacity: "4 passengers",
+      image: "/placeholder.svg",
+    },
+    {
       name: "FanJet 600",
-      capacity: "8 passengers",
+      capacity: "1 passenger",
       image: "/placeholder.svg",
     },
   ];
@@ -136,9 +136,7 @@ const FleetSection = () => {
                   <p className="text-sm text-platinum-500">
                     <span className="font-medium">Capacity:</span> {plane.capacity}
                   </p>
-                  <p className="text-sm text-platinum-500">
-                    <span className="font-medium">Range:</span> {plane.range}
-                  </p>
+                  
                 </div>
                 <Button variant="outline" className="w-full">
                   Learn More
