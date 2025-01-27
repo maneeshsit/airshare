@@ -16,7 +16,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Book Your Flight</h2>
             <p className="text-platinum-600 max-w-2xl mx-auto">
-              Search available flights and book your next luxury air travel experience.
+              Search available flights and book your next air travel experience.
             </p>
           </div>
           <BookingCard />
@@ -33,7 +33,7 @@ const Index = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">AirShare</h3>
               <p className="text-platinum-300">
-                Luxury air travel simplified through innovative aircraft sharing.
+                Air travel simplified through innovative aircraft sharing.
               </p>
             </div>
             <div>
