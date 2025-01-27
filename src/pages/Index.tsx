@@ -40,7 +40,7 @@ const Index = () => {
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <p className="text-platinum-300">
                 Email: contact@airshare.com<br />
-                Phone: +1 (555) 123-4567
+                Phone: +91 (988) 585-6259
               </p>
             </div>
             <div>
