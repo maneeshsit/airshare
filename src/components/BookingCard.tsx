@@ -1,27 +1,70 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { useState } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+const cities = [
+  "New York",
+  "Los Angeles",
+  "Chicago",
+  "Miami",
+  "Seattle",
+  "San Francisco",
+  "Las Vegas",
+  "Boston",
+  "Washington DC",
+  "Houston"
+];
 
 const BookingCard = () => {
   const [date, setDate] = useState<Date>();
+  const [departure, setDeparture] = useState<string>("");
+  const [arrival, setArrival] = useState<string>("");
 
   return (
     <Card className="p-6 w-full max-w-md mx-auto bg-white/95 backdrop-blur-sm shadow-lg">
       <div className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="departure">Departure</Label>
-          <Input id="departure" placeholder="Enter city or airport" />
+          <Select value={departure} onValueChange={setDeparture}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select departure city" />
+            </SelectTrigger>
+            <SelectContent>
+              {cities.map((city) => (
+                <SelectItem key={city} value={city}>
+                  {city}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
         
         <div className="space-y-2">
           <Label htmlFor="arrival">Arrival</Label>
-          <Input id="arrival" placeholder="Enter city or airport" />
+          <Select value={arrival} onValueChange={setArrival}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select arrival city" />
+            </SelectTrigger>
+            <SelectContent>
+              {cities.filter(city => city !== departure).map((city) => (
+                <SelectItem key={city} value={city}>
+                  {city}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <div className="space-y-2">
@@ -49,12 +92,18 @@ const BookingCard = () => {
 
         <div className="space-y-2">
           <Label htmlFor="passengers">Passengers</Label>
-          <Input
-            id="passengers"
-            type="number"
-            min="1"
-            placeholder="Number of passengers"
-          />
+          <Select defaultValue="1">
+            <SelectTrigger>
+              <SelectValue placeholder="Select number of passengers" />
+            </SelectTrigger>
+            <SelectContent>
+              {[1, 2, 3, 4, 5, 6].map((num) => (
+                <SelectItem key={num} value={num.toString()}>
+                  {num} {num === 1 ? 'Passenger' : 'Passengers'}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
         <Button className="w-full">Search Flights</Button>
