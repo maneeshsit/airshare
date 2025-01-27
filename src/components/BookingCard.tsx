@@ -15,16 +15,34 @@ import {
 } from "@/components/ui/select";
 
 const cities = [
-  "New York",
-  "Los Angeles",
-  "Chicago",
-  "Miami",
-  "Seattle",
-  "San Francisco",
-  "Las Vegas",
-  "Boston",
-  "Washington DC",
-  "Houston"
+  "Agra",
+  "Ahmedabad",
+  "Bengaluru",
+  "Bhopal",
+  "Chandigarh",
+  "Chennai",
+  "Coimbatore",
+  "Delhi",
+  "Guwahati",
+  "Hyderabad",
+  "Indore",
+  "Jaipur",
+  "Jodhpur",
+  "Kolkata",
+  "Mumbai",
+  "Nagpur",
+  "Noida",
+  "Panvel",
+  "Pune",
+  "Tirupati",
+  "Udaipur",
+  "Visakhapatnam",
+  "Thiruvananthapuram",
+  "Lakshadweep",
+  "Gandhingar",
+  "Amaravati",
+  "Kochi",
+  "Panaji"
 ];
 
 const BookingCard = () => {
