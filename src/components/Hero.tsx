@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 animate-fade-up">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-          Luxury Air Travel
+          Air Travel
           <br />
           <span className="text-2xl sm:text-3xl md:text-4xl font-light mt-2 block">
             Simplified

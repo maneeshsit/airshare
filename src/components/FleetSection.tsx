@@ -32,7 +32,7 @@ const FleetSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Premium Fleet</h2>
           <p className="text-platinum-600 max-w-2xl mx-auto">
-            Experience luxury and comfort with our meticulously maintained aircraft fleet,
+            Experience comfort with our meticulously maintained aircraft fleet,
             each selected for optimal performance and passenger comfort.
           </p>
         </div>
