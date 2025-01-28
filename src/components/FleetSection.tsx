@@ -145,11 +145,14 @@ const FleetSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {aircraft.map((plane) => (
             <Card key={plane.name} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="bg-white p-4 flex items-center justify-center h-48">
+              <div className="bg-white p-6 flex items-center justify-center h-56">
                 <img
                   src={plane.image}
                   alt={plane.name}
-                  className="w-full h-full object-contain"
+                  className="w-32 h-32 object-contain transform hover:scale-110 transition-transform duration-300"
+                  style={{
+                    filter: "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))"
+                  }}
                 />
               </div>
               <CardContent className="p-6">
