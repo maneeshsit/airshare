@@ -6,42 +6,42 @@ const FleetSection = () => {
     {
       name: "Cessna Citation CJ2",
       capacity: "6 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/cessna.svg",
     },
     {
       name: "Hawker Beechcraft 750",
-      capacity: "8 passengers",
-      image: "/placeholder.svg",
+      capacity: "8 passengers", 
+      image: "/aircraft/hawker.svg",
     },
     {
       name: "Hawker Beechcraft 800XP",
       capacity: "8 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/hawker.svg",
     },
     {
       name: "Hawker Beechcraft 900XP",
       capacity: "8 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/hawker.svg",
     },
     {
       name: "Falcon 2000 Easy",
       capacity: "10 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/falcon.svg",
     },
     {
       name: "Global 6000",
       capacity: "13-19 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/global.svg",
     },
     {
       name: "Legacy 600",
       capacity: "13 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/legacy.svg",
     },
     {
       name: "Gulfstream G200",
       capacity: "8-10 passengers",
-      image: "/placeholder.svg",
+      image: "/aircraft/gulfstream.svg",
     },
     {
       name: "Augusta AW 109",
@@ -127,7 +127,7 @@ const FleetSection = () => {
               <img
                 src={plane.image}
                 alt={plane.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain p-4"
               />
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{plane.name}</h3>
@@ -136,7 +136,6 @@ const FleetSection = () => {
                   <p className="text-sm text-platinum-500">
                     <span className="font-medium">Capacity:</span> {plane.capacity}
                   </p>
-                  
                 </div>
                 <Button variant="outline" className="w-full">
                   Learn More
