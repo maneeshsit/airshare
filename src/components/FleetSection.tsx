@@ -55,13 +55,13 @@ const FleetSection = () => {
       name: "Augusta AW 109",
       capacity: "6 passengers",
       description: "Premium helicopter for short-distance luxury travel.",
-      image: "/placeholder.svg",
+      image: "/aircraft/augusta.svg",
     },
     {
       name: "Dassault Falcon 2000LX",
       capacity: "10 passengers",
       description: "Advanced long-range business jet.",
-      image: "/placeholder.svg",
+      image: "/aircraft/dassault.svg",
     },
     {
       name: "DA50 RG",
