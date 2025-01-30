@@ -27,12 +27,16 @@ const Hero = () => {
           Book your flight today and elevate your travel experience.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8">
-            Book a Flight
-          </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 hover:bg-white/20 text-white border-white/50">
-            View Fleet
-          </Button>
+          <a href="#flights">
+            <Button size="lg" className="text-lg px-8">
+              Book a Flight
+            </Button>
+          </a>
+          <a href="#fleet">
+            <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 hover:bg-white/20 text-white border-white/50">
+              View Fleet
+            </Button>
+          </a>
         </div>
       </div>
 

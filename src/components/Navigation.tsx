@@ -39,9 +39,11 @@ const Navigation = () => {
             <a href="#safety" className="text-platinum-700 hover:text-platinum-900 transition-colors">
               Safety
             </a>
-            <Button variant="outline" className="ml-4">
-              Book Now
-            </Button>
+            <a href="#flights">
+              <Button variant="outline" className="ml-4">
+                Book Now
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -87,7 +89,11 @@ const Navigation = () => {
               Safety
             </a>
             <div className="px-3 py-2">
-              <Button className="w-full">Book Now</Button>
+              <a href="#flights">
+                <Button className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
+                  Book Now
+                </Button>
+              </a>
             </div>
           </div>
         </div>
