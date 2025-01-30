@@ -7,6 +7,7 @@ import { DateSelect } from "./booking/DateSelect";
 import { PassengerSelect } from "./booking/PassengerSelect";
 import { FlightResults } from "./booking/FlightResults";
 import { addHours } from "date-fns";
+import { toast } from "@/components/ui/use-toast";
 
 const BookingCard = () => {
   const [date, setDate] = useState<Date>();
@@ -14,6 +15,7 @@ const BookingCard = () => {
   const [arrival, setArrival] = useState<string>("");
   const [passengers, setPassengers] = useState("1");
   const [showResults, setShowResults] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Mock function to generate sample flights
   const generateFlights = () => {
@@ -39,11 +41,30 @@ const BookingCard = () => {
     return flights;
   };
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (!departure || !arrival || !date) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields before searching.",
+        variant: "destructive",
+      });
       return;
     }
-    setShowResults(true);
+
+    try {
+      setIsLoading(true);
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      setShowResults(true);
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to fetch flight results. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -73,9 +94,9 @@ const BookingCard = () => {
           <Button 
             className="w-full" 
             onClick={handleSearch}
-            disabled={!departure || !arrival || !date}
+            disabled={!departure || !arrival || !date || isLoading}
           >
-            Search Flights
+            {isLoading ? "Searching..." : "Search Flights"}
           </Button>
         </div>
       </Card>
