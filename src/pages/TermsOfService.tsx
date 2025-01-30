@@ -1,7 +1,23 @@
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
+
 const TermsOfService = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-white py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-end mb-4">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => navigate("/")}
+            className="hover:bg-slate-100"
+          >
+            <X className="h-6 w-6" />
+          </Button>
+        </div>
         <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
         <div className="prose prose-slate max-w-none">
           <h2>1. Acceptance of Terms</h2>
