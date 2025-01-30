@@ -27,6 +27,8 @@ interface FlightResultsProps {
 }
 
 export const FlightResults = ({ open, onClose, flights, date, passengers }: FlightResultsProps) => {
+  if (!open) return null;
+
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl">

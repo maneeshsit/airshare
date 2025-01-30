@@ -16,11 +16,12 @@ const BookingCard = () => {
   const [passengers, setPassengers] = useState("1");
   const [showResults, setShowResults] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [flights, setFlights] = useState<any[]>([]);
 
   // Mock function to generate sample flights
   const generateFlights = () => {
     const baseTime = date || new Date();
-    const flights = [];
+    const generatedFlights = [];
     const prices = [15000, 18000, 22000, 25000, 28000];
     const times = [0, 2, 4, 6, 8];
 
@@ -28,7 +29,7 @@ const BookingCard = () => {
       const departureTime = addHours(baseTime, times[i]);
       const arrivalTime = addHours(departureTime, 2);
       
-      flights.push({
+      generatedFlights.push({
         id: `flight-${i + 1}`,
         departure,
         arrival,
@@ -38,7 +39,7 @@ const BookingCard = () => {
         seatsAvailable: Math.floor(Math.random() * 30) + 10,
       });
     }
-    return flights;
+    return generatedFlights;
   };
 
   const handleSearch = async () => {
@@ -55,6 +56,8 @@ const BookingCard = () => {
       setIsLoading(true);
       // Simulate API call delay
       await new Promise(resolve => setTimeout(resolve, 1000));
+      const generatedFlights = generateFlights();
+      setFlights(generatedFlights);
       setShowResults(true);
     } catch (error) {
       toast({
@@ -65,6 +68,11 @@ const BookingCard = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleCloseResults = () => {
+    setShowResults(false);
+    setFlights([]);
   };
 
   return (
@@ -101,13 +109,15 @@ const BookingCard = () => {
         </div>
       </Card>
 
-      <FlightResults
-        open={showResults}
-        onClose={() => setShowResults(false)}
-        flights={generateFlights()}
-        date={date!}
-        passengers={parseInt(passengers)}
-      />
+      {showResults && (
+        <FlightResults
+          open={showResults}
+          onClose={handleCloseResults}
+          flights={flights}
+          date={date!}
+          passengers={parseInt(passengers)}
+        />
+      )}
     </>
   );
 };
