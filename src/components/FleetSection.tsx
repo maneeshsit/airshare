@@ -6,87 +6,197 @@ const FleetSection = () => {
     {
       name: "Cessna Citation CJ2",
       capacity: "6 passengers",
+<<<<<<< HEAD
       image: "/cj2.png",
     },
     {
       name: "Hawker Beechcraft 750",
       capacity: "8 passengers",
       image: "/beachcraft750.png",
+=======
+      description: "Light jet perfect for short-range trips with exceptional comfort.",
+      image: "/aircraft/cessna.svg",
+    },
+    {
+      name: "Hawker Beechcraft 750",
+      capacity: "8 passengers", 
+      description: "Mid-size jet offering superior range and cabin comfort.",
+      image: "/aircraft/hawker.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Hawker Beechcraft 800XP",
       capacity: "8 passengers",
+<<<<<<< HEAD
       image: "/beechcraft800xp.png",
+=======
+      description: "Advanced mid-size jet with excellent performance capabilities.",
+      image: "/aircraft/hawker.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Hawker Beechcraft 900XP",
       capacity: "8 passengers",
+<<<<<<< HEAD
       image: "/beechcraft900xpmid.png",
+=======
+      description: "Latest generation mid-size jet with enhanced range.",
+      image: "/aircraft/hawker.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Falcon 2000 Easy",
       capacity: "10 passengers",
+<<<<<<< HEAD
       image: "/flacon200easy.png",
+=======
+      description: "Super mid-size jet offering transcontinental range.",
+      image: "/aircraft/falcon.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Global 6000",
       capacity: "13-19 passengers",
+<<<<<<< HEAD
       image: "/global6000large.png",
+=======
+      description: "Ultra-long-range jet with exceptional cabin space.",
+      image: "/aircraft/global.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Legacy 600",
       capacity: "13 passengers",
+<<<<<<< HEAD
       image: "/legacy600large.png",
+=======
+      description: "Large-cabin jet with outstanding comfort and range.",
+      image: "/aircraft/legacy.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Gulfstream G200",
       capacity: "8-10 passengers",
+<<<<<<< HEAD
       image: "/gulfstreamg200supermid.png",
+=======
+      description: "Super mid-size jet with superior performance.",
+      image: "/aircraft/gulfstream.svg",
+    },
+    {
+      name: "Augusta AW 109",
+      capacity: "6 passengers",
+      description: "Premium helicopter for short-distance luxury travel.",
+      image: "/aircraft/augusta.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Dassault Falcon 2000LX",
       capacity: "10 passengers",
+<<<<<<< HEAD
       image: "/falcon2000lx.png",
+=======
+      description: "Advanced long-range business jet.",
+      image: "/aircraft/dassault.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "DA50 RG",
       capacity: "5 passengers",
+<<<<<<< HEAD
       image: "/da50rg.png",
+=======
+      description: "Lightweight aircraft with excellent performance.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "DA62 (twin engine)",
       capacity: "7 passengers",
+<<<<<<< HEAD
       image: "/da62.png",
+=======
+      description: "Versatile twin-engine aircraft for various missions.",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "eDA40 (electric)",
+      capacity: "4 passengers",
+      description: "Eco-friendly electric aircraft for short flights.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "DA62 MPP (twin engine)",
       capacity: "2 passengers",
+<<<<<<< HEAD
       image: "/da62mpp.png",
+=======
+      description: "Multi-purpose aircraft for diverse operations.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "DHC-2 Beaver",
       capacity: "6 passengers",
+<<<<<<< HEAD
       image: "/dhc2.png",
+=======
+      description: "Classic bush plane known for its versatility.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "M700 Fury​",
       capacity: "6 passengers",
+<<<<<<< HEAD
       image: "/m700fury.png",
+=======
+      description: "High-performance aircraft for demanding missions.",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "M500",
+      capacity: "6 passengers",
+      description: "Compact aircraft designed for efficiency.",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "M350",
+      capacity: "6 passengers",
+      description: "Reliable aircraft for short to medium-range flights.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Archer® LX​",
       capacity: "4 passengers",
+<<<<<<< HEAD
       image: "/archerlx.png",
+=======
+      description: "Light aircraft ideal for flight training.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "Archer® DLX",
       capacity: "4 passengers",
+<<<<<<< HEAD
       image: "/archerdlx.png",
+=======
+      description: "Enhanced version of the Archer for better performance.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
     {
       name: "FanJet 600",
       capacity: "1 passenger",
+<<<<<<< HEAD
       image: "/fanjet600.png",
+=======
+      description: "Compact jet designed for personal travel.",
+      image: "/placeholder.svg",
+>>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
     },
   ];
 
@@ -104,11 +214,16 @@ const FleetSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {aircraft.map((plane) => (
             <Card key={plane.name} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <img
-                src={plane.image}
-                alt={plane.name}
-                className="w-full h-48 object-cover"
-              />
+              <div className="bg-white p-6 flex items-center justify-center h-56">
+                <img
+                  src={plane.image}
+                  alt={plane.name}
+                  className="w-32 h-32 object-contain transform hover:scale-110 transition-transform duration-300"
+                  style={{
+                    filter: "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))"
+                  }}
+                />
+              </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{plane.name}</h3>
                 <p className="text-platinum-600 mb-4">{plane.description}</p>
@@ -116,7 +231,6 @@ const FleetSection = () => {
                   <p className="text-sm text-platinum-500">
                     <span className="font-medium">Capacity:</span> {plane.capacity}
                   </p>
-                  
                 </div>
                 <Button variant="outline" className="w-full">
                   Learn More
