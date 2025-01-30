@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg"
+          src="aircraft/cloud.png"
           alt="Private jet"
           className="w-full h-full object-cover"
         />
