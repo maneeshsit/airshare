@@ -6,197 +6,104 @@ const FleetSection = () => {
     {
       name: "Cessna Citation CJ2",
       capacity: "6 passengers",
-<<<<<<< HEAD
-      image: "/cj2.png",
-    },
-    {
-      name: "Hawker Beechcraft 750",
-      capacity: "8 passengers",
-      image: "/beachcraft750.png",
-=======
       description: "Light jet perfect for short-range trips with exceptional comfort.",
-      image: "/aircraft/cessna.svg",
+      image: "/aircraft/cj2.png",
     },
     {
       name: "Hawker Beechcraft 750",
       capacity: "8 passengers", 
       description: "Mid-size jet offering superior range and cabin comfort.",
-      image: "/aircraft/hawker.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/beachcraft750.png",
     },
     {
       name: "Hawker Beechcraft 800XP",
       capacity: "8 passengers",
-<<<<<<< HEAD
-      image: "/beechcraft800xp.png",
-=======
       description: "Advanced mid-size jet with excellent performance capabilities.",
-      image: "/aircraft/hawker.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/beechcraft800xp.png",
     },
     {
       name: "Hawker Beechcraft 900XP",
       capacity: "8 passengers",
-<<<<<<< HEAD
-      image: "/beechcraft900xpmid.png",
-=======
       description: "Latest generation mid-size jet with enhanced range.",
-      image: "/aircraft/hawker.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/beechcraft900xpmid.png",
     },
     {
       name: "Falcon 2000 Easy",
       capacity: "10 passengers",
-<<<<<<< HEAD
-      image: "/flacon200easy.png",
-=======
       description: "Super mid-size jet offering transcontinental range.",
-      image: "/aircraft/falcon.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/flacon200easy.png",
     },
     {
       name: "Global 6000",
       capacity: "13-19 passengers",
-<<<<<<< HEAD
-      image: "/global6000large.png",
-=======
       description: "Ultra-long-range jet with exceptional cabin space.",
-      image: "/aircraft/global.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/global6000large.png",
     },
     {
       name: "Legacy 600",
       capacity: "13 passengers",
-<<<<<<< HEAD
-      image: "/legacy600large.png",
-=======
       description: "Large-cabin jet with outstanding comfort and range.",
-      image: "/aircraft/legacy.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/legacy600large.png",
     },
     {
       name: "Gulfstream G200",
       capacity: "8-10 passengers",
-<<<<<<< HEAD
-      image: "/gulfstreamg200supermid.png",
-=======
       description: "Super mid-size jet with superior performance.",
-      image: "/aircraft/gulfstream.svg",
-    },
-    {
-      name: "Augusta AW 109",
-      capacity: "6 passengers",
-      description: "Premium helicopter for short-distance luxury travel.",
-      image: "/aircraft/augusta.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/gulfstreamg200supermid.png",
     },
     {
       name: "Dassault Falcon 2000LX",
       capacity: "10 passengers",
-<<<<<<< HEAD
-      image: "/falcon2000lx.png",
-=======
       description: "Advanced long-range business jet.",
-      image: "/aircraft/dassault.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "/aircraft/falcon2000lx.png",
     },
     {
       name: "DA50 RG",
       capacity: "5 passengers",
-<<<<<<< HEAD
-      image: "/da50rg.png",
-=======
       description: "Lightweight aircraft with excellent performance.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/da50rg.png",
     },
     {
       name: "DA62 (twin engine)",
       capacity: "7 passengers",
-<<<<<<< HEAD
-      image: "/da62.png",
-=======
       description: "Versatile twin-engine aircraft for various missions.",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "eDA40 (electric)",
-      capacity: "4 passengers",
-      description: "Eco-friendly electric aircraft for short flights.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/da62.png",
     },
     {
       name: "DA62 MPP (twin engine)",
       capacity: "2 passengers",
-<<<<<<< HEAD
-      image: "/da62mpp.png",
-=======
       description: "Multi-purpose aircraft for diverse operations.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/da62mpp.png",
     },
     {
       name: "DHC-2 Beaver",
       capacity: "6 passengers",
-<<<<<<< HEAD
-      image: "/dhc2.png",
-=======
       description: "Classic bush plane known for its versatility.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/dhc2.png",
     },
     {
       name: "M700 Fury​",
       capacity: "6 passengers",
-<<<<<<< HEAD
-      image: "/m700fury.png",
-=======
       description: "High-performance aircraft for demanding missions.",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "M500",
-      capacity: "6 passengers",
-      description: "Compact aircraft designed for efficiency.",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "M350",
-      capacity: "6 passengers",
-      description: "Reliable aircraft for short to medium-range flights.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/m700fury.png",
     },
     {
       name: "Archer® LX​",
       capacity: "4 passengers",
-<<<<<<< HEAD
-      image: "/archerlx.png",
-=======
       description: "Light aircraft ideal for flight training.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/archerlx.png",
     },
     {
       name: "Archer® DLX",
       capacity: "4 passengers",
-<<<<<<< HEAD
-      image: "/archerdlx.png",
-=======
       description: "Enhanced version of the Archer for better performance.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/archerdlx.png",
     },
     {
       name: "FanJet 600",
       capacity: "1 passenger",
-<<<<<<< HEAD
-      image: "/fanjet600.png",
-=======
       description: "Compact jet designed for personal travel.",
-      image: "/placeholder.svg",
->>>>>>> 3b7188637777be00455805a4ae80ed8346d1dcd5
+      image: "aircraft/fanjet600.png",
     },
   ];
 
