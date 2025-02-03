@@ -109,6 +109,23 @@ const FleetSection = () => {
       capacity: "10 passengers",
       description: "Super mid-size jet offering transcontinental range.",
       image: "/aircraft/flacon200easy.png",
+      details: {
+        range: "3,350 nautical miles",
+        speed: "482 knots",
+        altitude: "47,000 feet",
+        features: [
+          "Spacious stand-up cabin",
+          "Advanced flight deck with EASy cockpit",
+          "Full-service galley",
+          "Private lavatory",
+          "Large baggage compartment",
+          "Enhanced sound proofing system",
+          "Satellite communications",
+          "High-speed internet connectivity",
+          "Entertainment system",
+          "Individual climate control zones"
+        ]
+      }
     },
     {
       name: "Global 6000",
