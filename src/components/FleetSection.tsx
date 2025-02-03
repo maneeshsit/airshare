@@ -65,6 +65,21 @@ const FleetSection = () => {
       capacity: "8 passengers",
       description: "Advanced mid-size jet with excellent performance capabilities.",
       image: "/aircraft/beechcraft800xp.png",
+      details: {
+        range: "2,540 nautical miles",
+        speed: "448 knots",
+        altitude: "41,000 feet",
+        features: [
+          "Stand-up cabin with 5'9\" height",
+          "Full refreshment center",
+          "Private lavatory",
+          "Advanced avionics suite",
+          "Spacious baggage compartment",
+          "Enhanced sound insulation",
+          "Individual climate control",
+          "Entertainment system"
+        ]
+      }
     },
     {
       name: "Hawker Beechcraft 900XP",
