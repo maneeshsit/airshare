@@ -86,6 +86,23 @@ const FleetSection = () => {
       capacity: "8 passengers",
       description: "Latest generation mid-size jet with enhanced range.",
       image: "/aircraft/beechcraft900xpmid.png",
+      details: {
+        range: "2,818 nautical miles",
+        speed: "466 knots",
+        altitude: "41,000 feet",
+        features: [
+          "Stand-up cabin with 6' height",
+          "Advanced cabin management system",
+          "Full refreshment center",
+          "Private lavatory",
+          "Enhanced avionics suite",
+          "Large baggage compartment",
+          "Superior sound proofing",
+          "Individual climate zones",
+          "High-speed wireless internet",
+          "Entertainment system with multiple displays"
+        ]
+      }
     },
     {
       name: "Falcon 2000 Easy",
