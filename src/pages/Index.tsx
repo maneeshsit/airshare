@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import BookingCard from "@/components/BookingCard";
 import FleetSection from "@/components/FleetSection";
 import SafetySection from "@/components/SafetySection";
+import ChatBot from "@/components/ChatBot";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -70,6 +71,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      <ChatBot />
     </div>
   );
 };
